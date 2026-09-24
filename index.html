@@ -310,8 +310,74 @@
     }
 
     .artists {
-      max-width: 900px;
+      max-width: 1150px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .festival-day {
+      position: relative;
+      min-height: 330px;
+      padding: 42px 28px 34px;
+      border: 1px solid rgba(241,194,125,.32);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at top, rgba(179,59,50,.24), transparent 55%),
+        rgba(255,255,255,.045);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      transition: .35s ease;
+    }
+
+    .festival-day:hover {
+      transform: translateY(-8px);
+      border-color: #f1c27d;
+      box-shadow: 0 22px 50px rgba(0,0,0,.28);
+    }
+
+    .festival-day::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border: 1px solid rgba(241,194,125,.18);
+      border-radius: 50%;
+      right: -45px;
+      top: -45px;
+    }
+
+    .day-name {
+      color: #f1c27d;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+    }
+
+    .headliner {
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: .98;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .support-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #bdaea1;
+      margin-bottom: 7px;
+    }
+
+    .support-artist {
+      font-size: 21px;
+      font-weight: 800;
+      color: #fff;
     }
 
     .main-artist {
@@ -654,12 +720,23 @@
         font-size: 17px;
       }
 
-      .main-artist {
-        font-size: 38px;
+      .artists {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 14px;
+        padding: 4px 6px 20px;
+        justify-content: flex-start;
       }
 
-      .artist-row {
-        font-size: 22px;
+      .festival-day {
+        min-width: 82vw;
+        min-height: 300px;
+        scroll-snap-align: center;
+      }
+
+      .headliner {
+        font-size: 34px;
       }
 
       .btn-secondary {
@@ -875,32 +952,29 @@
 
     <div class="artists">
 
-      <div class="main-artist">VIERNES</div>
-      <div class="artist-row">
-        <span>DANI FERNÁNDEZ</span>
-      </div>
-      <div class="artist-small">
-        EL PARRA · TELONERO
-      </div>
+      <article class="festival-day">
+        <div class="day-name">VIERNES</div>
+        <div class="headliner">DANI<br>FERNÁNDEZ</div>
+        <div class="support-label">TELONERO</div>
+        <div class="support-artist">EL PARRA</div>
+      </article>
 
-      <br><br>
+      <article class="festival-day">
+        <div class="day-name">SÁBADO</div>
+        <div class="headliner">ALEJANDRO<br>ASTOLA</div>
+        <div class="support-label">TELONERA</div>
+        <div class="support-artist">SHEILA DÚRCAL</div>
+      </article>
 
-      <div class="main-artist">SÁBADO</div>
-      <div class="artist-row">
-        <span>ALEJANDRO ASTOLA</span>
-      </div>
-      <div class="artist-small">
-        SHEILA DÚRCAL · TELONERA
-      </div>
-
-      <br><br>
-
-      <div class="main-artist">DOMINGO</div>
-      <div class="artist-row">
-        <span>ANTOÑITO MOLINA</span>
-      </div>
+      <article class="festival-day">
+        <div class="day-name">DOMINGO</div>
+        <div class="headliner">ANTOÑITO<br>MOLINA</div>
+        <div class="support-label">RITA LA BAILAORA FESTIVAL</div>
+      </article>
 
     </div>
+
+  </div>
 
   </div>
 

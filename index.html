@@ -65,12 +65,22 @@
     }
 
     .logo {
-      font-size: 23px;
-      font-weight: 900;
-      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      min-width: 150px;
     }
 
-    .logo span {
+    .logo img {
+      display: block;
+      width: 150px;
+      max-height: 70px;
+      object-fit: contain;
+    }
+
+    .logo-fallback {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1px;
       color: #b33b32;
     }
 
@@ -588,12 +598,16 @@
 
     footer {
       background: #1d1712;
-
       color: #aaa;
-
       padding: 35px;
-
       text-align: center;
+    }
+
+    .footer-logo {
+      width: 130px;
+      max-height: 90px;
+      object-fit: contain;
+      margin-bottom: 14px;
     }
 
 
@@ -668,9 +682,10 @@
 
   <div class="container nav">
 
-    <div class="logo">
-      RITA LA BAILAORA <span>FESTIVAL</span>
-    </div>
+    <a class="logo" href="#" aria-label="Rita la Bailaora Festival">
+      <img src="logo-rita.png" alt="Rita la Bailaora" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-fallback" style="display:none;">RITA LA BAILAORA</span>
+    </a>
 
     <nav>
       <a href="#festival">Festival</a>
@@ -1113,6 +1128,8 @@
 <!-- FOOTER -->
 
 <footer>
+
+  <img class="footer-logo" src="logo-rita.png" alt="Rita la Bailaora" onerror="this.style.display='none';">
 
   <p>
 

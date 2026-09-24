@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Madrid Tardeo | Entradas</title>
+  <title>Rita la Bailaora Festival | Madrid</title>
 
   <style>
+
     /* =========================
        GENERAL
     ========================== */
@@ -20,8 +21,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #fffaf5;
-      color: #222;
+      background: #fff8ef;
+      color: #2b2118;
     }
 
     .container {
@@ -34,6 +35,11 @@
       text-decoration: none;
     }
 
+    section {
+      padding: 90px 0;
+    }
+
+
     /* =========================
        HEADER
     ========================== */
@@ -44,12 +50,12 @@
       width: 100%;
       z-index: 1000;
 
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
+      background: rgba(255, 248, 239, 0.95);
+      backdrop-filter: blur(12px);
 
       padding: 18px 0;
 
-      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
     }
 
     .nav {
@@ -59,25 +65,26 @@
     }
 
     .logo {
-      font-size: 24px;
-      font-weight: 800;
+      font-size: 23px;
+      font-weight: 900;
       letter-spacing: 1px;
     }
 
     .logo span {
-      color: #e75480;
+      color: #b33b32;
     }
 
     nav a {
       margin-left: 25px;
-      color: #222;
+      color: #2b2118;
       font-weight: 600;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #e75480;
+      color: #b33b32;
     }
+
 
     /* =========================
        HERO
@@ -92,10 +99,10 @@
       background:
         linear-gradient(
           90deg,
-          rgba(0,0,0,0.72),
-          rgba(0,0,0,0.25)
+          rgba(40,20,10,0.78),
+          rgba(40,20,10,0.20)
         ),
-        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=80");
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1800&q=80");
 
       background-size: cover;
       background-position: center;
@@ -104,41 +111,42 @@
     }
 
     .hero-content {
-      max-width: 700px;
+      max-width: 800px;
     }
 
     .tag {
       display: inline-block;
 
-      background: #e75480;
+      background: #b33b32;
 
-      padding: 8px 15px;
+      padding: 9px 18px;
+
       border-radius: 30px;
 
       font-size: 14px;
       font-weight: bold;
+      letter-spacing: 1px;
 
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .hero h1 {
-      font-size: 65px;
-      line-height: 1;
-      margin-bottom: 20px;
+      font-size: 75px;
+      line-height: 0.95;
+      margin-bottom: 25px;
     }
 
     .hero h1 span {
-      color: #ffd166;
+      color: #f1c27d;
     }
 
     .hero p {
       font-size: 21px;
       line-height: 1.6;
-
-      max-width: 600px;
-
-      margin-bottom: 30px;
+      max-width: 650px;
+      margin-bottom: 35px;
     }
+
 
     /* =========================
        BOTONES
@@ -147,15 +155,15 @@
     .btn {
       display: inline-block;
 
-      padding: 15px 30px;
+      padding: 16px 32px;
 
-      background: #e75480;
+      background: #b33b32;
 
       color: white;
 
       border-radius: 50px;
 
-      font-weight: bold;
+      font-weight: 800;
 
       border: none;
 
@@ -166,7 +174,7 @@
 
     .btn:hover {
       transform: translateY(-3px);
-      background: #cf3e6c;
+      background: #8f2e27;
     }
 
     .btn-secondary {
@@ -177,53 +185,74 @@
 
     .btn-secondary:hover {
       background: white;
-      color: #222;
+      color: #2b2118;
     }
+
 
     /* =========================
-       SECCIONES
+       TITULOS
     ========================== */
-
-    section {
-      padding: 90px 0;
-    }
 
     .section-title {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
 
     .section-title h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 45px;
+      margin-bottom: 12px;
     }
 
     .section-title p {
-      color: #777;
+      color: #75685c;
       font-size: 18px;
     }
+
+
+    /* =========================
+       FESTIVAL
+    ========================== */
+
+    .festival {
+      background: white;
+    }
+
+    .festival-intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .festival-intro h2 {
+      font-size: 48px;
+      margin-bottom: 25px;
+    }
+
+    .festival-intro p {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #655b52;
+    }
+
 
     /* =========================
        EXPERIENCIA
     ========================== */
 
     .experience {
-      background: white;
+      background: #fff8ef;
     }
 
     .cards {
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
     .card {
-      padding: 35px 25px;
+      padding: 40px 25px;
 
-      background: #fffaf5;
+      background: white;
 
       border-radius: 20px;
 
@@ -241,28 +270,75 @@
 
     .icon {
       font-size: 45px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .card h3 {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 21px;
     }
 
     .card p {
-      color: #666;
-      line-height: 1.5;
+      color: #75685c;
+      line-height: 1.6;
     }
 
+
     /* =========================
-       EVENTO
+       CARTEL
+    ========================== */
+
+    .lineup {
+      background: #2b2118;
+      color: white;
+      text-align: center;
+    }
+
+    .lineup .section-title p {
+      color: #c9bdb1;
+    }
+
+    .artists {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .main-artist {
+      font-size: 55px;
+      font-weight: 900;
+      color: #f1c27d;
+      margin-bottom: 25px;
+    }
+
+    .artist-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .artist-small {
+      font-size: 19px;
+      color: #c9bdb1;
+      margin-top: 25px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       INFO FESTIVAL
     ========================== */
 
     .event {
-      background: #f7efe7;
+      background: #f1e3d3;
     }
 
     .event-card {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
 
       background: white;
@@ -280,36 +356,35 @@
     }
 
     .event-image {
-      min-height: 450px;
+      min-height: 480px;
 
       background:
-        url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1000&q=80");
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80");
 
       background-size: cover;
       background-position: center;
     }
 
     .event-info {
-      padding: 45px;
+      padding: 50px;
     }
 
     .event-info h2 {
-      font-size: 35px;
-      margin-bottom: 20px;
+      font-size: 38px;
+      margin-bottom: 25px;
     }
 
     .event-detail {
-      margin-bottom: 15px;
+      margin-bottom: 17px;
       font-size: 17px;
     }
 
     .event-description {
-      color: #666;
-
-      line-height: 1.6;
-
+      color: #6d6258;
+      line-height: 1.7;
       margin: 25px 0;
     }
+
 
     /* =========================
        ENTRADAS
@@ -321,23 +396,19 @@
 
     .ticket-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 25px;
 
       max-width: 1000px;
-
       margin: auto;
     }
 
     .ticket {
-      padding: 35px;
+      padding: 40px 30px;
 
       border-radius: 20px;
 
-      border: 1px solid #eee;
+      border: 1px solid #e6ded7;
 
       text-align: center;
 
@@ -352,7 +423,7 @@
     }
 
     .ticket.featured {
-      border: 2px solid #e75480;
+      border: 2px solid #b33b32;
       position: relative;
     }
 
@@ -364,7 +435,7 @@
 
       transform: translateX(-50%);
 
-      background: #e75480;
+      background: #b33b32;
 
       color: white;
 
@@ -383,21 +454,20 @@
     }
 
     .price {
-      font-size: 38px;
+      font-size: 40px;
       font-weight: bold;
 
-      color: #e75480;
+      color: #b33b32;
 
       margin: 20px 0;
     }
 
     .ticket p {
-      color: #666;
-
-      margin-bottom: 20px;
-
+      color: #75685c;
+      margin-bottom: 25px;
       min-height: 50px;
     }
+
 
     /* =========================
        CTA
@@ -406,26 +476,33 @@
     .cta {
       text-align: center;
 
-      background: #171717;
+      background: #b33b32;
 
       color: white;
     }
 
     .cta h2 {
-      font-size: 45px;
+      font-size: 50px;
       margin-bottom: 15px;
     }
 
     .cta p {
-      font-size: 19px;
-
-      color: #ccc;
-
+      font-size: 20px;
       margin-bottom: 30px;
     }
 
+    .cta .btn {
+      background: white;
+      color: #b33b32;
+    }
+
+    .cta .btn:hover {
+      background: #fff8ef;
+    }
+
+
     /* =========================
-       MODAL COMPRA
+       MODAL
     ========================== */
 
     .modal {
@@ -441,8 +518,7 @@
       width: 100%;
       height: 100%;
 
-      background:
-        rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.75);
 
       align-items: center;
       justify-content: center;
@@ -467,7 +543,7 @@
       right: 20px;
       top: 15px;
 
-      font-size: 28px;
+      font-size: 30px;
 
       cursor: pointer;
     }
@@ -477,7 +553,7 @@
     }
 
     .modal-content p {
-      color: #666;
+      color: #75685c;
       margin-bottom: 25px;
     }
 
@@ -497,26 +573,28 @@
     }
 
     .total {
-      font-size: 20px;
+      font-size: 21px;
 
       font-weight: bold;
 
       margin-bottom: 20px;
     }
 
+
     /* =========================
        FOOTER
     ========================== */
 
     footer {
-      background: #0d0d0d;
+      background: #1d1712;
 
       color: #aaa;
 
-      padding: 30px;
+      padding: 35px;
 
       text-align: center;
     }
+
 
     /* =========================
        RESPONSIVE
@@ -525,8 +603,7 @@
     @media(max-width: 900px) {
 
       .cards {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .ticket-grid {
@@ -538,7 +615,7 @@
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 52px;
       }
 
       nav {
@@ -547,6 +624,7 @@
 
     }
 
+
     @media(max-width: 550px) {
 
       .cards {
@@ -554,11 +632,19 @@
       }
 
       .hero h1 {
-        font-size: 40px;
+        font-size: 42px;
       }
 
       .hero p {
         font-size: 17px;
+      }
+
+      .main-artist {
+        font-size: 38px;
+      }
+
+      .artist-row {
+        font-size: 22px;
       }
 
       .btn-secondary {
@@ -575,22 +661,21 @@
 <body>
 
 
-<!-- =========================
-     HEADER
-========================== -->
+<!-- HEADER -->
 
 <header>
 
   <div class="container nav">
 
     <div class="logo">
-      MADRID <span>TARDEO</span>
+      RITA LA BAILAORA <span>FESTIVAL</span>
     </div>
 
     <nav>
-      <a href="#inicio">Inicio</a>
+      <a href="#festival">Festival</a>
       <a href="#experiencia">Experiencia</a>
-      <a href="#evento">Evento</a>
+      <a href="#cartel">Cartel</a>
+      <a href="#info">Info</a>
       <a href="#entradas">Entradas</a>
     </nav>
 
@@ -600,37 +685,34 @@
 
 
 
-<!-- =========================
-     HERO
-========================== -->
+<!-- HERO -->
 
-<section class="hero" id="inicio">
+<section class="hero">
 
   <div class="container">
 
     <div class="hero-content">
 
       <div class="tag">
-        SÁBADOS · MADRID
+        MADRID · 2026
       </div>
 
       <h1>
-        Las tardes de Madrid
-        <span>se bailan.</span>
+        RITA LA BAILAORA
+        <span>FESTIVAL</span>
       </h1>
 
       <p>
-        Música en directo, DJ, copas, amigos y muchas ganas
-        de que la tarde se alargue.
-        Descubre uno de los tardeos de Madrid.
+        Un día para cantar, bailar, comer, brindar
+        y vivir Rita como nunca antes.
       </p>
 
       <a href="#entradas" class="btn">
         COMPRAR ENTRADAS
       </a>
 
-      <a href="#evento" class="btn btn-secondary">
-        DESCUBRIR EL PLAN
+      <a href="#cartel" class="btn btn-secondary">
+        VER CARTEL
       </a>
 
     </div>
@@ -641,9 +723,43 @@
 
 
 
-<!-- =========================
-     EXPERIENCIA
-========================== -->
+<!-- EL FESTIVAL -->
+
+<section class="festival" id="festival">
+
+  <div class="container">
+
+    <div class="festival-intro">
+
+      <h2>Rita se hace festival.</h2>
+
+      <p>
+
+        Después de tantas tardes bailando juntos,
+        ha llegado el momento de hacerlo todavía más grande.
+
+        <br><br>
+
+        Música en directo, DJs, gastronomía,
+        espectáculos, animación y muchas sorpresas
+        en una jornada donde la única norma es venir
+        con ganas de pasarlo bien.
+
+        <br><br>
+
+        <strong>La vida es hoy. La vida es Rita.</strong>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- EXPERIENCIA -->
 
 <section class="experience" id="experiencia">
 
@@ -651,11 +767,10 @@
 
     <div class="section-title">
 
-      <h2>No es salir. Es tardeo.</h2>
+      <h2>Mucho más que un festival</h2>
 
       <p>
-        Todo lo que necesitas para que un sábado normal
-        deje de serlo.
+        Todo el universo Rita en un mismo lugar.
       </p>
 
     </div>
@@ -663,14 +778,15 @@
 
     <div class="cards">
 
+
       <div class="card">
 
         <div class="icon">🎤</div>
 
-        <h3>Música en directo</h3>
+        <h3>Conciertos</h3>
 
         <p>
-          Conciertos y artistas para empezar la tarde cantando.
+          Artistas y bandas en directo durante toda la jornada.
         </p>
 
       </div>
@@ -680,11 +796,10 @@
 
         <div class="icon">🎧</div>
 
-        <h3>DJ Set</h3>
+        <h3>DJ Sets</h3>
 
         <p>
-          Los hits que conoces y las canciones que no puedes
-          evitar bailar.
+          Pop, hits, flamenquito y canciones que todos conocemos.
         </p>
 
       </div>
@@ -692,12 +807,13 @@
 
       <div class="card">
 
-        <div class="icon">🍸</div>
+        <div class="icon">🍔</div>
 
-        <h3>Copas</h3>
+        <h3>Food Area</h3>
 
         <p>
-          Tu copa, tu gente y toda la tarde por delante.
+          Una zona gastronómica para recuperar fuerzas
+          entre baile y baile.
         </p>
 
       </div>
@@ -705,14 +821,82 @@
 
       <div class="card">
 
-        <div class="icon">✨</div>
+        <div class="icon">💃</div>
 
-        <h3>Sorpresas</h3>
+        <h3>Shows</h3>
 
         <p>
-          Animación, shows y momentos que no estaban
-          en tus planes.
+          Animación, baile, espectáculos y muchas sorpresas.
         </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CARTEL -->
+
+<section class="lineup" id="cartel">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>CARTEL 2026</h2>
+
+      <p>
+        Una jornada entera de música.
+      </p>
+
+    </div>
+
+
+    <div class="artists">
+
+      <div class="main-artist">
+        ARTISTA PRINCIPAL
+      </div>
+
+
+      <div class="artist-row">
+
+        <span>ARTISTA 02</span>
+
+        <span>·</span>
+
+        <span>ARTISTA 03</span>
+
+      </div>
+
+
+      <div class="artist-row">
+
+        <span>ARTISTA 04</span>
+
+        <span>·</span>
+
+        <span>ARTISTA 05</span>
+
+        <span>·</span>
+
+        <span>ARTISTA 06</span>
+
+      </div>
+
+
+      <div class="artist-small">
+
+        DJ SET · LIVE MUSIC · FLAMENQUITO · POP · HITS
+
+        <br>
+
+        + ARTISTAS POR CONFIRMAR
 
       </div>
 
@@ -724,20 +908,19 @@
 
 
 
-<!-- =========================
-     EVENTO
-========================== -->
+<!-- INFORMACIÓN -->
 
-<section class="event" id="evento">
+<section class="event" id="info">
 
   <div class="container">
 
+
     <div class="section-title">
 
-      <h2>Próximo tardeo</h2>
+      <h2>Nos vemos en Madrid</h2>
 
       <p>
-        Tu próximo sábado empieza aquí.
+        Guarda la fecha.
       </p>
 
     </div>
@@ -752,15 +935,16 @@
       <div class="event-info">
 
         <h2>
-          SÁBADO DE TARDEO
+          RITA LA BAILAORA FESTIVAL
         </h2>
 
+
         <div class="event-detail">
-          📅 Sábado 3 de octubre
+          📅 Próximamente
         </div>
 
         <div class="event-detail">
-          🕕 Desde las 18:00h
+          🕐 Desde las 13:00h
         </div>
 
         <div class="event-detail">
@@ -770,18 +954,21 @@
 
         <p class="event-description">
 
-          Empezamos con concierto en directo y no sabemos
-          cómo vamos a terminar.
+          Desde la comida hasta que el cuerpo aguante.
 
-          DJ set, animación, copas y muchas sorpresas
-          durante toda la tarde.
+          <br><br>
+
+          Conciertos, DJs, gastronomía,
+          espectáculos y todo lo que ha convertido
+          a Rita en uno de esos planes que empiezan
+          tranquilos y terminan bailando.
 
         </p>
 
 
         <a href="#entradas" class="btn">
 
-          QUIERO MI ENTRADA
+          QUIERO ESTAR AHÍ
 
         </a>
 
@@ -795,9 +982,7 @@
 
 
 
-<!-- =========================
-     ENTRADAS
-========================== -->
+<!-- ENTRADAS -->
 
 <section class="tickets" id="entradas">
 
@@ -806,10 +991,10 @@
 
     <div class="section-title">
 
-      <h2>Elige tu entrada</h2>
+      <h2>Entradas</h2>
 
       <p>
-        Las entradas son limitadas.
+        Elige cómo quieres vivir Rita la Bailaora Festival.
       </p>
 
     </div>
@@ -818,36 +1003,28 @@
     <div class="ticket-grid">
 
 
-      <!-- Entrada 1 -->
-
       <div class="ticket">
 
-        <h3>
-          Entrada anticipada
-        </h3>
+        <h3>EARLY BIRD</h3>
 
         <div class="price">
-          10€
+          15€
         </div>
 
         <p>
-          Acceso al evento.
+          Entrada general al festival.
         </p>
 
         <button
           class="btn"
-          onclick="abrirCompra('Entrada anticipada',10)"
+          onclick="abrirCompra('Early Bird',15)"
         >
-
           COMPRAR
-
         </button>
 
       </div>
 
 
-
-      <!-- Entrada 2 -->
 
       <div class="ticket featured">
 
@@ -855,54 +1032,44 @@
           MÁS VENDIDA
         </div>
 
-        <h3>
-          Entrada + copa
-        </h3>
+        <h3>GENERAL</h3>
 
         <div class="price">
-          15€
+          20€
         </div>
 
         <p>
-          Acceso al evento + una copa.
+          Entrada general al festival.
         </p>
 
         <button
           class="btn"
-          onclick="abrirCompra('Entrada + copa',15)"
+          onclick="abrirCompra('Entrada General',20)"
         >
-
           COMPRAR
-
         </button>
 
       </div>
 
 
 
-      <!-- Entrada 3 -->
-
       <div class="ticket">
 
-        <h3>
-          Entrada VIP
-        </h3>
+        <h3>VIP</h3>
 
         <div class="price">
-          25€
+          35€
         </div>
 
         <p>
-          Acceso preferente + copa.
+          Acceso preferente + zona VIP + consumición.
         </p>
 
         <button
           class="btn"
-          onclick="abrirCompra('Entrada VIP',25)"
+          onclick="abrirCompra('Entrada VIP',35)"
         >
-
           COMPRAR
-
         </button>
 
       </div>
@@ -916,25 +1083,23 @@
 
 
 
-<!-- =========================
-     CTA FINAL
-========================== -->
+<!-- CTA -->
 
 <section class="cta">
 
   <div class="container">
 
     <h2>
-      ¿Nos vemos el sábado?
+      Este baile no te lo puedes perder.
     </h2>
 
     <p>
-      Tú trae a tu gente. Del resto nos encargamos nosotros.
+      Nos vemos en el primer Rita la Bailaora Festival.
     </p>
 
     <a href="#entradas" class="btn">
 
-      CONSEGUIR ENTRADA
+      CONSEGUIR MI ENTRADA
 
     </a>
 
@@ -944,16 +1109,14 @@
 
 
 
-<!-- =========================
-     FOOTER
-========================== -->
+<!-- FOOTER -->
 
 <footer>
 
   <p>
 
     © <span id="year"></span>
-    Madrid Tardeo · Todos los derechos reservados
+    Rita la Bailaora Festival · Madrid
 
   </p>
 
@@ -961,13 +1124,12 @@
 
 
 
-<!-- =========================
-     MODAL DE COMPRA
-========================== -->
+<!-- MODAL COMPRA -->
 
 <div class="modal" id="modalCompra">
 
   <div class="modal-content">
+
 
     <span
       class="close"
@@ -978,8 +1140,9 @@
 
 
     <h2>
-      Comprar entradas
+      Tus entradas
     </h2>
+
 
     <p id="tipoEntrada">
       Entrada
@@ -1002,15 +1165,20 @@
       Número de entradas
     </label>
 
+
     <select
       id="cantidad"
       onchange="actualizarTotal()"
     >
 
       <option value="1">1 entrada</option>
+
       <option value="2">2 entradas</option>
+
       <option value="3">3 entradas</option>
+
       <option value="4">4 entradas</option>
+
       <option value="5">5 entradas</option>
 
     </select>
@@ -1019,6 +1187,7 @@
     <div class="total">
 
       Total:
+
       <span id="precioTotal">
         0€
       </span>
@@ -1036,15 +1205,14 @@
 
     </button>
 
+
   </div>
 
 </div>
 
 
 
-<!-- =========================
-     JAVASCRIPT
-========================== -->
+<!-- JAVASCRIPT -->
 
 <script>
 
@@ -1055,13 +1223,13 @@
 
 
 
-  /* Variables */
+  /* Precio seleccionado */
 
   let precioEntrada = 0;
 
 
 
-  /* Abrir compra */
+  /* Abrir modal */
 
   function abrirCompra(tipo, precio) {
 
@@ -1082,7 +1250,7 @@
 
 
 
-  /* Cerrar compra */
+  /* Cerrar modal */
 
   function cerrarCompra() {
 
@@ -1093,7 +1261,7 @@
 
 
 
-  /* Calcular precio */
+  /* Actualizar precio */
 
   function actualizarTotal() {
 
@@ -1110,12 +1278,12 @@
 
 
 
-  /* Finalizar compra */
+  /* Simular compra */
 
   function finalizarCompra() {
 
     alert(
-      "¡Perfecto! En una web real ahora pasarías a la pasarela de pago."
+      "¡Nos vemos en Rita la Bailaora Festival! 💃"
     );
 
     cerrarCompra();
@@ -1124,7 +1292,7 @@
 
 
 
-  /* Cerrar modal pulsando fuera */
+  /* Cerrar pulsando fuera */
 
   window.onclick = function(event) {
 
@@ -1137,7 +1305,7 @@
 
     }
 
-  }
+  };
 
 </script>
 

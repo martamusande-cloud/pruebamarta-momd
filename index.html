@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rita la Bailaora Festival · Madrid 2027. Tres días de música, tardeo y una experiencia muy Rita.">
+  <title>Rita la Bailaora Festival · Madrid 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Rita la Bailaora Festival">
+      <img src="images/logo-rita.png" alt="Rita la Bailaora">
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#cartel">Cartel</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#bonos">Bonos</a>
+      <a class="nav-cta" href="#bonos">Entradas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">MADRID · 2027</p>
+        <h1><span>RITA LA BAILAORA</span><em>Festival</em></h1>
+        <p class="hero-copy">Tres días. Seis artistas. Una forma muy nuestra de vivir la música.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#bonos">Adquiere tu bono</a>
+          <a class="btn btn-ghost" href="#cartel">Ver cartel</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#cartel">DESCUBRE <span>↓</span></a>
+    </section>
+
+    <section class="ticker" aria-label="Información del festival">
+      <div class="ticker-track">
+        <span>MADRID 2027 ✦ 3 DÍAS ✦ MÚSICA EN DIRECTO ✦ RITA LA BAILAORA FESTIVAL ✦</span>
+        <span>MADRID 2027 ✦ 3 DÍAS ✦ MÚSICA EN DIRECTO ✦ RITA LA BAILAORA FESTIVAL ✦</span>
+      </div>
+    </section>
+
+    <section class="lineup section" id="cartel">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">EL CARTEL</p>
+        <h2>Tres días.<br><em>Una sola Rita.</em></h2>
+      </div>
+
+      <div class="lineup-grid">
+        <article class="day-card reveal">
+          <div class="day-top"><span>01</span><p>VIERNES</p></div>
+          <div class="artists">
+            <div><small>CONCIERTO</small><h3>ABRAHAM<br>MATEO</h3></div>
+            <div><small>CONCIERTO</small><h3>DANI<br>FERNÁNDEZ</h3></div>
+          </div>
+          <a href="#bonos">Entradas viernes ↗</a>
+        </article>
+
+        <article class="day-card featured reveal">
+          <div class="day-top"><span>02</span><p>SÁBADO</p></div>
+          <div class="artists">
+            <div><small>CONCIERTO</small><h3>SHEILA<br>DÚRCAL</h3></div>
+            <div><small>CONCIERTO</small><h3>ALEJANDRO<br>ASTOLA</h3></div>
+          </div>
+          <a href="#bonos">Entradas sábado ↗</a>
+        </article>
+
+        <article class="day-card reveal">
+          <div class="day-top"><span>03</span><p>DOMINGO</p></div>
+          <div class="artists">
+            <div><small>TELONERO</small><h3>EL<br>PARRA</h3></div>
+            <div><small>CONCIERTO</small><h3>ANTOÑITO<br>MOLINA</h3></div>
+          </div>
+          <a href="#bonos">Entradas domingo ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <div class="experience-photo reveal"><img src="images/rita-experiencia.jpg" alt="Experiencia Rita la Bailaora"></div>
+      <div class="experience-copy reveal">
+        <p class="eyebrow dark">NO ES SOLO UN FESTIVAL</p>
+        <h2>Esto es<br><em>Rita.</em></h2>
+        <p>Atardeceres, música, amigos y esa sensación de empezar tomando algo y acabar bailando. En 2027, Rita se hace festival.</p>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Momentos Rita">
+      <figure class="gallery-wide reveal"><img src="images/rita-ambiente-01.jpg" alt="Ambiente de Rita la Bailaora"></figure>
+      <figure class="gallery-tall reveal"><img src="images/rita-ambiente-02.jpg" alt="Público disfrutando en Rita la Bailaora"></figure>
+    </section>
+
+    <section class="tickets section" id="bonos">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">ELIGE CÓMO VIVIRLO</p>
+        <h2>Adquiere<br><em>tu bono.</em></h2>
+      </div>
+      <div class="ticket-grid">
+        <article class="ticket reveal"><span>01</span><h3>1 DÍA</h3><p>Elige tu día favorito.</p><strong>30€</strong><button type="button" data-ticket="Bono 1 día">Comprar bono</button></article>
+        <article class="ticket ticket-hot reveal"><div class="badge">DOS DÍAS</div><span>02</span><h3>2 DÍAS</h3><p>Dos días para no quedarte con ganas.</p><strong>50€</strong><button type="button" data-ticket="Bono 2 días">Comprar bono</button></article>
+        <article class="ticket reveal"><span>03</span><h3>3 DÍAS</h3><p>La experiencia Rita completa.</p><strong>80€</strong><button type="button" data-ticket="Bono 3 días">Comprar bono</button></article>
+      </div>
+      <p class="ticket-note">* Próximamente conectaremos los botones con la plataforma oficial de venta.</p>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-bg"></div><div class="final-shade"></div>
+      <div class="final-content reveal"><img src="images/logo-rita.png" alt=""><p>MADRID · 2027</p><h2>La vida es hoy.<br><em>La vida es Rita.</em></h2><a class="btn btn-primary" href="#bonos">Quiero estar ahí</a></div>
+    </section>
+  </main>
+
+  <footer><img src="images/logo-rita.png" alt="Rita la Bailaora"><p>RITA LA BAILAORA FESTIVAL · MADRID 2027</p><a href="#top">VOLVER ARRIBA ↑</a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
